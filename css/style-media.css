@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@media(max-width:770px){
+
+    /* Top */
+    header{
+        font-size: 1rem;
+    }
+
+    #top-title>p{
+        font-size: 2rem;
+    }
+
+    #top-menu{
+        flex-direction: column;
+    }
+
+    #top-menu>a{
+        font-size: 1.8rem;
+    }
+
+    #top-scroll-guide{
+        justify-content: flex-end;
+        font-size: 1rem;
+    }
+
+    .arrow-bottom{
+        width: 9px;
+        height: 9px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+
+    /* Section Common*/
+    .section{
+        padding: 0 3%;
+    }
+
+    .section>h2{
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Profile */
+    #profile{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #profile-box{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #profile-image{
+        width: auto;
+    }
+
+    #profile-image>img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #profile-description{
+        width: auto;
+        font-size: 0.8rem;
+    }
+
+    #profile-name{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #profile-description>p>span{
+        font-size: 0.6rem;
+    }
+
+    /* Skills */
+    #skills-contents>hr{
+        width: 300px;
+    }
+
+    #skills-contents>p{
+        font-size: 1rem;
+    }
+
+    #skills-contents>p:first-child{
+        font-size: 1.5rem;
+    }
+
+    /* strengths*/
+    #strengths-skills-item{
+        gap: 0;
+
+    }
+
+    .strengths-skills-image{
+        width: 60px;
+    }
+
+    .strengths-skills-image>img{
+        width: 40px;
+    }
+
+    #nlp-icon{
+        width: 60px;
+    }
+
+    /* normal */
+    .skills-image>img{
+        width: 30px;
+    }
+
+    #apache-icon{
+        width: 20px;
+    }
+
+    /* Works */
+    #works-items{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px 0;
+    }
+
+    /*Contact*/
+    #contact>p{
+        font-size: 0.6rem;
+    }
+
+    #profile-icon{
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+    
+    #twitter-icon{
+        width: 15px;
+        height: 15px;
+    }
+
+    
+
+}
