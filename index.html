@@ -17,152 +17,180 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
     <!-- font-family: 'Marcellus', serif; -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="top">
-        <header>
-            <div>
-                <p>Shoma's Portfolio</p>
-            </div>
-        </header>
-        <div class="top-wrapper">
-            <h1 id="top-title">
-                <p>Welcome</p>
-                <p>To</p>
-                <p>Shoma's Portfolio</p>
-            </h1>
-            <div id="top-menu">
-                <a href="#profile">Profile</a>
-                <a href="#works">Works</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div id="top-scroll-guide">
-                <p>scroll down</p>
-                <div class="arrow-bottom"></div>
-                <div class="arrow-bottom"></div>
-            </div>
-        </div>
-        <div id="top-bottom">
-            <p></p>
-        </div>
+    <!-- Loading -->
+    <div id="splash">
+        <div id="splash-log">Now Loading...</div>
     </div>
+    <div class="splashbg1"></div>
+    <div class="splashbg2"></div>
 
-    <div id="profile" class="section">
-        <h2>Profile</h2>
-        <div id="profile-box">
-            <div id="profile-image">
-                <img src="./image/profile-icon.png" alt="プロフィールアイコン">
+    <!-- Main Contents -->
+    <div id="container">
+        <div id="top">
+            <header>
+                <div>
+                    <a href="#">
+                        <p>Shoma's Portfolio</p>
+                    </a>
+                </div>
+            </header>
+            <div class="top-wrapper">
+                <h1 id="top-title">
+                    <p>Welcome</p>
+                    <p>To</p>
+                    <p>Shoma's Portfolio</p>
+                </h1>
+                <div id="top-menu">
+                    <a href="#profile">Profile</a>
+                    <a href="#skills"> Skills</a>
+                    <a href="#works">Works</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div id="top-scroll-guide">
+                    <p>scroll down</p>
+                    <div class="arrow-bottom"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
             </div>
-            <div id="profile-description">
-                <p id="profile-name">NAME：Hasegawa Shoma</p>
-                <p id="profile-hn">HN：SHiren</p>
-                <p>岐阜県出身。2000年10月生まれ。<br />中学生時にPCに興味を持ち、自作PCの作成やラズベリーパイに触れるようになる。<br />上記の経緯から次第にプログラミングにも意識が向くようになり、より専門的な勉強をしようと高専の情報工学科に入学。高専生時代は自然言語処理の研究を主として、勉学に励む。<br />卒業後はクラウドベンダーの企業に入社し、ノーコード・ローコードによる業務アプリケーションの開発に従事。<br />
-                    <span>Twitter : <a>https://twitter.com/SHiren_1995</a></span><br /><span>Blog :
-                        <a>https://shiren-blog.com</a></span>
-                </p>
+            <div id="top-bottom">
+                <p></p>
             </div>
         </div>
-    </div>
 
-    <div id="skills" class="section">
-        <h2>Skills</h2>
-        <div id="skills-contents">
-            <p>Strengths</p>
-            <div id="strengths-skills-items">
-                <div class="strengths-skills-image">
-                    <img src="./image/python.svg" alt="python">
+        <div id="profile" class="section">
+            <h2>Profile</h2>
+            <div id="profile-box">
+                <div id="profile-image">
+                    <img src="./image/common/my-profile-icon.png" alt="プロフィールアイコン">
                 </div>
-                <div class="strengths-skills-image">
-                    <img src="./image/flask.svg" alt="flask">
-                </div>
-                <div class="strengths-skills-image">
-                    <img id="nlp-icon" src="./image/NLP.svg" alt="nlp">
-                </div>
-            </div>
-
-            <hr size="30">
-
-            <p>Language</p>
-            <div class="skills-item">
-                <div class="skills-image">
-                    <img src="./image/html-5.svg" alt="html">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/css-3.svg" alt="css">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/javascript.svg" alt="javascript">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/python.svg" alt="python">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/c++++.png" alt="c#">
-                </div>
-            </div>
-            <p>Others</p>
-            <div class="skills-item">
-                <div class="skills-image">
-                    <img src="./image/microsoft-azure.svg" alt="azure">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/aws.svg" alt="aws">
-                </div>
-                <div class="skills-image">
-                    <img id="apache-icon" src="./image/apache.svg" alt="apache">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/centos-icon.svg" alt="centos">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/flask.svg" alt="flask">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/git-icon.svg" alt="git">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/github-icon.svg" alt="github">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/PowerApps_scalable.svg" alt="powerapps">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/PowerAutomate_scalable.svg" alt="powerautomate">
-                </div>
-                <div class="skills-image">
-                    <img src="./image/Dataverse_scalable.svg" alt="dataverse">
+                <div id="profile-description">
+                    <p id="profile-name">NAME：Hasegawa Shoma</p>
+                    <p id="profile-hn">HN：SHiren</p>
+                    <p>岐阜県出身。2000年10月生まれ。<br />中学生時にPCに興味を持ち、自作PCの作成やラズベリーパイに触れるようになる。<br />上記の経緯から次第にプログラミングにも意識が向くようになり、より専門的な勉強をしようと高専の情報工学科に入学。高専生時代は自然言語処理の研究を主として、勉学に励む。<br />卒業後はクラウドインテグレーターの企業に入社し、主にノーコード・ローコードによる業務アプリケーションの開発に従事。<br />
+                        <span>Twitter : <a
+                                href="https://twitter.com/SHiren_1995">https://twitter.com/SHiren_1995</a></span><br /><span>Blog
+                            :
+                            <a href="https://shiren-blog.com">https://shiren-blog.com</a></span>
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="works" class="section">
-        <h2>Works</h2>
-        <div id="works-items">
-            <div class="works-item">
-                content
-            </div>
-            <div class="works-item">
-                content
-            </div>
-            <div class="works-item">
-                content
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div id="skills-contents">
+                <p>Strengths Skills</p>
+                <div id="strengths-skills-items">
+                    <div class="strengths-skills-image">
+                        <img src="./image/skills/python.svg" alt="python">
+                    </div>
+                    <div class="strengths-skills-image">
+                        <img src="./image/skills/flask.svg" alt="flask">
+                    </div>
+                    <div class="strengths-skills-image">
+                        <img id="nlp-icon" src="./image/skills/NLP.svg" alt="nlp">
+                    </div>
+                </div>
+
+                <hr size="30">
+
+                <p>Language</p>
+                <div class="skills-item">
+                    <div class="skills-image">
+                        <img src="./image/skills/html-5.svg" alt="html">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/css-3.svg" alt="css">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/javascript.svg" alt="javascript">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/python.svg" alt="python">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/c++++.png" alt="c#">
+                    </div>
+                </div>
+                <p>Others</p>
+                <div class="skills-item">
+                    <div class="skills-image">
+                        <img src="./image/skills/microsoft-azure.svg" alt="azure">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/aws.svg" alt="aws">
+                    </div>
+                    <div class="skills-image">
+                        <img id="apache-icon" src="./image/skills/apache.svg" alt="apache">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/centos-icon.svg" alt="centos">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/flask.svg" alt="flask">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/git-icon.svg" alt="git">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/github-icon.svg" alt="github">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/PowerApps_scalable.svg" alt="powerapps">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/PowerAutomate_scalable.svg" alt="powerautomate">
+                    </div>
+                    <div class="skills-image">
+                        <img src="./image/skills/Dataverse_scalable.svg" alt="dataverse">
+                    </div>
+                </div>
+                <p>License</p>
+                <div id="license-items">
+                    <ul>
+                        <li>基本情報技術者試験</li>
+                        <li>ウェブデザイン技能検定 2級</li>
+                        <li>Microsoft Certified: Power Platform Fundamentals</li>
+                        <li>Microsoft Certified: Azure Data Fundamentals</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="contact" class="section">
-        <h2>Contact</h2>
-        <p>ご用がありましたら、TwitterのDMまでご連絡をお願いいたします。</p>
-        <a href="#"><img id="profile-icon" src="./image/profile-icon.png" alt="プロフィールアイコン" /></a>
-        <a href="#"><img id="twitter-icon" src="./image/twitter-icon.svg" alt="Twitterアイコン"></a>
-    </div>
+        <div id="works" class="section">
+            <h2>Works</h2>
+            <div id="works-items">
+                <div class="works-item">
+                    content
+                </div>
+                <div class="works-item">
+                    content
+                </div>
+                <div class="works-item">
+                    content
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2022 SHiren</p>
-    </footer>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>ご用がありましたら、TwitterのDMまでご連絡をお願いいたします。</p>
+            <a href="#"><img id="profile-icon" src="./image/common/my-profile-icon.png" alt="プロフィールアイコン" /></a>
+            <a href="#"><img id="twitter-icon" src="./image/common/twitter-icon.svg" alt="Twitterアイコン"></a>
+        </div>
+
+        <footer>
+            <p>&copy; 2022 SHiren</p>
+        </footer>
+    </div>
+    <script src="js/loading.js"></script>
 </body>
 
 </html>
