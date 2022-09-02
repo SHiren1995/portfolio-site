@@ -22,7 +22,7 @@
     #top-menu>a{
         font-size: 1.8rem;
     }
-
+    /*
     #top-scroll-guide{
         justify-content: flex-end;
         font-size: 1rem;
@@ -33,6 +33,27 @@
         height: 9px;
         border-bottom: 2px solid white;
         border-right: 2px solid white;
+    }*/
+
+    .scrolldown2{
+        bottom: 70px;
+    }
+
+    .scrolldown2 span{
+        font-size: 0.7rem;
+    }
+
+    @keyframes circlemove{
+        0%{
+            bottom: 40px;
+        }
+        100%{
+            bottom: -5px;
+        }
+    }
+
+    .scrolldown2:after{
+        height: 50px;
     }
 
     /* Section Common*/
