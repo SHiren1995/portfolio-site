@@ -1,5 +1,7 @@
 @charset "utf-8";
-/* Common */
+/* ===============
+ Common 
+================*/
 html{
     font-family: 'Marcellus', serif;
     background-color:#f0f0f0 ;
@@ -10,7 +12,9 @@ a{
     text-decoration: none;
 }
 
-/* Loading */
+/* ================
+ Loading 
+===============*/
 /* ローディング画面のためのCSS */
 #splash{
     position: fixed;
@@ -24,7 +28,7 @@ a{
 
 #splash-log{
     font-size: 2rem;
-    color: #eee;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,7 +156,9 @@ body.appear #container{
     }
 }
 
-/* Top */
+/* ===============
+ Top
+===============*/
 #top{
     width: 100vw;
     height: 100vh;
@@ -203,7 +209,7 @@ header>div{
 #top-title p{
     display: inline-block;
     font-weight: normal;
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -216,7 +222,7 @@ header>div{
 }
 
 #top-menu a{
-    font-size: 3rem;
+    font-size: 3.8rem;
     text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
@@ -250,7 +256,7 @@ header>div{
 
 .scrolldown2{
     position: absolute;
-    bottom: 100px;
+    bottom: 10%;
     left: 50%;
 }
 
@@ -261,7 +267,7 @@ header>div{
     bottom: 10px;
     /*テキストの形状*/
     color: #eee;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.05em;
     /*縦書き設定*/
     -ms-writing-mode: tb-rl;
@@ -325,7 +331,9 @@ header>div{
     border-right: 3px dashed white;
 }
 
-/* Section Common*/
+/* ===============
+ Section Common
+ ===============*/
 .section{
     border-top: 1px dashed black;
     padding: 0 15%;
@@ -338,7 +346,9 @@ header>div{
     margin-bottom: 30px;
 }
 
-/* Profile */
+/* ===============
+ Profile 
+ ===============*/
 #profile{
     width: 100vw;
     height: 90vh;
@@ -401,10 +411,12 @@ header>div{
 }
 
 
-/* Skills */
+/* ===============
+ Skills
+ =============== */
 #skills{
     width: 100vw;
-    height: 140vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -472,7 +484,7 @@ header>div{
 
 .skills-item{
     width: 80%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -509,32 +521,95 @@ header>div{
     margin-bottom: 3px;
 }
 
-/* Works */
+/* ===============
+ Works 
+===============*/
 #works{
+    width: 100vw;
+    height: 110vh;
+    text-align: center;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+/* メイン画像下に余白をつける */
+.gallery{
+    width: 70%;
+    margin: 0 auto 20px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.gallery li{
+    list-style: none;
+}
+
+.gallery li span{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+/* 画像の横幅を100%にしてレスポンシブ化 */
+ul img{
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    height: auto;
+    vertical-align: bottom;
+    border: #fff solid;
 }
 
-#works-items{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* 矢印の設定 */
+
+/* 戻る、次へ矢印の位置 */
+.slick-prev,
+.slick-next{
+    position: absolute;
+    z-index: 3;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    height: 25px;
+    width: 25px;
 }
 
-.works-item{
-    width: 30%;
-    height: 70%;
-    background-color: white;
-    border: 1px dashed black;
+.slick-prev{
+    left: 2.5%;
+    transform: rotate(-135deg);
 }
 
-/* Contact */
+.slick-next{
+    right: 2.5%;
+    transform: rotate(45deg);
+}
+
+/* 選択するサムネイル画像の設定*/
+.choice-btn li{
+    cursor: pointer;
+    outline: none;
+    background: #333;
+    width: 25%!important;
+    list-style: none;
+}
+
+.choice-btn li img{
+    opacity: 0.4;
+}
+
+.choice-btn li.slick-current img{
+    opacity: 1;
+}
+
+.choice-btn .slick-track{
+    transform: unset!important;
+}
+
+
+/* ===============
+ Contact 
+ ===============*/
 #contact{
     width: 100vw;
     min-height: 50vh;
@@ -560,7 +635,9 @@ header>div{
     height: 30px;
 }
 
-/* footer */
+/* ===============
+ footer 
+===============*/
 footer{
     height: 8vh;
     display: flex;
