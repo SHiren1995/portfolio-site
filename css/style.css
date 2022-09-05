@@ -416,7 +416,7 @@ header>div{
  =============== */
 #skills{
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -526,7 +526,7 @@ header>div{
 ===============*/
 #works{
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -535,7 +535,7 @@ header>div{
 ===================================*/
 /* メイン画像下に余白をつける */
 .gallery{
-    width: 70%;
+    width: 60%;
     margin: 0 auto 20px auto;
     font-size: 1.2rem;
     font-weight: bold;
@@ -586,11 +586,12 @@ ul img{
 }
 
 /* 選択するサムネイル画像の設定*/
+
 .choice-btn li{
     cursor: pointer;
     outline: none;
     background: #333;
-    width: 25%!important;
+    width: 12.5%!important;
     list-style: none;
 }
 
@@ -605,6 +606,58 @@ ul img{
 .choice-btn .slick-track{
     transform: unset!important;
 }
+
+/* ----- モーダルウィンドウの設定 ----- */
+/*hideエリアをはじめは非表示*/
+.hide-area{
+    display: none;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before{
+    background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+    background:#666;
+}
+
+/* モーダルウィンドウ・ウィンドウ設定*/
+.modaal-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modaal-content-container h2{
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.modaal-content-container img{
+    width: 90%;
+}
+
+.modaal-content-container p{
+    margin-top:8px;
+}
+
+.modaal-content-container p span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.modaal-content-container p a{
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+
 
 
 /* ===============
