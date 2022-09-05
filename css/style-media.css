@@ -152,6 +152,10 @@
     }
 
     /* Works */
+    #works{
+        height: 80vh;
+    }
+
     #works-items{
         flex-direction: column;
         justify-content: flex-start;
@@ -169,11 +173,32 @@
         font-size: 0.8rem;
     }
 
+    .choice-btn li img{
+        max-width: 90px;
+        max-height: 42px;
+    }
+
     .slick-prev,
     .slick-next{
         top: 35%;
         height: 20px;
         width: 20px;
+    }
+
+    .choice-btn li{
+        width: 25%!important;
+    }
+
+    .modaal-content-container h2{
+        font-size: 1rem;
+    }
+
+    .modaal-content-container p{
+        font-size: 0.8rem;
+    }
+
+    .modaal-content-container p span{
+        font-size: 0.8rem;
     }
 
     /*Contact*/
