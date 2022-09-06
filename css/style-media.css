@@ -12,7 +12,11 @@
     }
 
     #top{
-        height: 90vh;
+        height: 700px;
+    }
+
+    .top-wrapper{
+        position: relative;
     }
 
     #top-title>p{
@@ -40,7 +44,7 @@
     }*/
 
     .scrolldown2{
-        bottom: 20%;
+        bottom: 5%;
     }
 
     .scrolldown2 span{
@@ -74,7 +78,7 @@
     /* Profile */
     #profile{
         height: auto;
-        height: 90vh;
+        height: 700px;
     }
 
     #profile-box{
@@ -111,6 +115,10 @@
     }
 
     /* Skills */
+    #skills{
+        height: 800px;
+    }
+
     #skills-contents>hr{
         width: 300px;
     }
@@ -157,7 +165,7 @@
 
     /* Works */
     #works{
-        height: 75vh;
+        height: 500px;
     }
 
     #works-items{
