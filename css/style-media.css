@@ -11,6 +11,10 @@
         font-size: 1rem;
     }
 
+    #top{
+        height: 90vh;
+    }
+
     #top-title>p{
         font-size: 2rem;
     }
@@ -36,7 +40,7 @@
     }*/
 
     .scrolldown2{
-        bottom: 10%;
+        bottom: 20%;
     }
 
     .scrolldown2 span{
@@ -70,7 +74,7 @@
     /* Profile */
     #profile{
         height: auto;
-        min-height: 100vh;
+        height: 90vh;
     }
 
     #profile-box{
@@ -153,7 +157,7 @@
 
     /* Works */
     #works{
-        height: 80vh;
+        height: 75vh;
     }
 
     #works-items{
