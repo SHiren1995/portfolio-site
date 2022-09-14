@@ -137,6 +137,10 @@ body.appear .splashbg2{
 /* 画面遷移の後現れるコンテンツ設定 */
 #container{
     opacity: 0;
+    background-image: url(../img/common/background-image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body.appear #container{
@@ -335,7 +339,7 @@ header>div{
  Section Common
  ===============*/
 .section{
-    border-top: 1px dashed black;
+    /*border-top: 2px dashed gray;*/
     padding: 0 15%;
 }
 
@@ -357,6 +361,7 @@ header>div{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 #profile-box{
@@ -421,7 +426,6 @@ header>div{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: white;
 }
 
 #skills-contents{
@@ -434,6 +438,7 @@ header>div{
     align-items: center;
     border: 1px dashed black;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 #skills-contents hr{
@@ -546,6 +551,10 @@ header>div{
     list-style: none;
 }
 
+.gallery a{
+    display: inline-block;
+}
+
 .gallery li span{
     font-size: 1rem;
     text-decoration: underline;
@@ -556,7 +565,15 @@ ul img{
     width: 100%;
     height: auto;
     vertical-align: bottom;
-    border: #fff solid;
+    border: outset 3px #a0a0a0;
+    background-color: #fff;
+    transition: 1s all;
+}
+
+ul img:hover{
+    transform: scale(1.05,1.05);
+    transition: 1s all;
+    border: none;
 }
 
 /* 矢印の設定 */
@@ -566,22 +583,22 @@ ul img{
 .slick-next{
     position: absolute;
     z-index: 3;
-    top: 42%;
+    top: 50%;
     cursor: pointer;
     outline: none;
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    height: 25px;
-    width: 25px;
+    border-top: 4px solid #aaa;
+    border-right: 4px solid #aaa;
+    height: 35px;
+    width: 35px;
 }
 
 .slick-prev{
-    left: 2.5%;
+    left: -6%;
     transform: rotate(-135deg);
 }
 
 .slick-next{
-    right: 2.5%;
+    right: -6%;
     transform: rotate(45deg);
 }
 
@@ -596,7 +613,7 @@ ul img{
 }
 
 .choice-btn li img{
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .choice-btn li.slick-current img{
@@ -641,6 +658,7 @@ ul img{
 
 .modaal-content-container img{
     width: 90%;
+    border:outset 5px #c0c0c0;
 }
 
 .modaal-content-container p{
