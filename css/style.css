@@ -1,13 +1,14 @@
 @charset "utf-8";
+
 /* ===============
  Common 
 ================*/
-html{
+html {
     font-family: 'Marcellus', serif;
-    background-color:#f0f0f0 ;
+    background-color: #f0f0f0;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -16,7 +17,7 @@ a{
  Loading 
 ===============*/
 /* ローディング画面のためのCSS */
-#splash{
+#splash {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -26,7 +27,7 @@ a{
     color: #000;
 }
 
-#splash-log{
+#splash-log {
     font-size: 2rem;
     color: #fff;
     position: absolute;
@@ -40,43 +41,45 @@ a{
     opacity: 0;
 }
 
-@keyframes splash-log-animation{
-    0%{
+@keyframes splash-log-animation {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
 /* 画面遷移のためのCSS */
-body{
+body {
     background: #c0c0c0;
 }
 
-body.appear{
+body.appear {
     background-color: #f0f0f0;
 }
 
 /* 画面遷移アニメーション */
 .splashbg1,
-.splashbg2{
+.splashbg2 {
     display: none;
 }
 
 body.appear .splashbg1,
-body.appear .splashbg2{
+body.appear .splashbg2 {
     display: block;
 }
 
 /* 右に消えるエリア */
-body.appear .splashbg1{
+body.appear .splashbg1 {
     animation-name: PageAnime;
     animation-duration: 1.2s;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     content: "";
     position: fixed;
@@ -89,22 +92,24 @@ body.appear .splashbg1{
     background-color: #333;
 }
 
-@keyframes PageAnime{
-    0%{
+@keyframes PageAnime {
+    0% {
         transform-origin: left;
         transform: scaleX(1);
     }
-    50%{
+
+    50% {
         transform-origin: right;
     }
-    100%{
+
+    100% {
         transform-origin: right;
         transform: scaleX(0);
     }
 }
 
 /* 左に消えるエリア */
-body.appear .splashbg2{
+body.appear .splashbg2 {
     animation-name: PageAnime2;
     animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
@@ -121,21 +126,23 @@ body.appear .splashbg2{
 }
 
 @keyframes PageAnime2 {
-    0%{
+    0% {
         transform-origin: right;
         transform: scaleX(1);
     }
-    50%{
+
+    50% {
         transform-origin: left;
     }
-    100%{
+
+    100% {
         transform-origin: left;
         transform: scaleX(0);
     }
 }
 
 /* 画面遷移の後現れるコンテンツ設定 */
-#container{
+#container {
     opacity: 0;
     background-image: url(../img/common/background-image2.jpg);
     background-size: cover;
@@ -143,7 +150,7 @@ body.appear .splashbg2{
     background-attachment: fixed;
 }
 
-body.appear #container{
+body.appear #container {
     animation-name: PageAnimeAppear;
     animation-duration: 1s;
     animation-delay: 0.2s;
@@ -151,11 +158,12 @@ body.appear #container{
     opacity: 0;
 }
 
-@keyframes PageAnimeAppear{
-    0%{
+@keyframes PageAnimeAppear {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -163,7 +171,7 @@ body.appear #container{
 /* ===============
  Top
 ===============*/
-#top{
+#top {
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -172,7 +180,7 @@ body.appear #container{
     color: white;
 }
 
-header{
+header {
     height: 7.5%;
     padding: 0 5%;
     display: flex;
@@ -183,7 +191,7 @@ header{
     border-bottom: 3px dashed white;
 }
 
-header>div{
+header>div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -194,7 +202,7 @@ header>div{
     border-right: 3px dashed white;
 }
 
-.top-wrapper{
+.top-wrapper {
     margin: 0 5%;
     width: 90%;
     height: 85%;
@@ -202,7 +210,7 @@ header>div{
     border-right: 3px dashed white;
 }
 
-#top-title{
+#top-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,14 +218,14 @@ header>div{
     height: 40%;
 }
 
-#top-title p{
+#top-title p {
     display: inline-block;
     font-weight: normal;
-    font-size: 4.2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 3.7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#top-menu{
+#top-menu {
     display: flex;
     flex-wrap: wrap;
     height: 40%;
@@ -225,17 +233,18 @@ header>div{
     align-content: center;
 }
 
-#top-menu a{
+#top-menu a {
     font-size: 3.8rem;
     text-decoration: underline;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     color: #bbb;
 }
 
-#top-menu>a:hover{
+#top-menu>a:hover {
     color: white;
 }
+
 /*
 #top-scroll-guide{
     height: 20%;
@@ -258,13 +267,13 @@ header>div{
 }
 */
 
-.scrolldown2{
+.scrolldown2 {
     position: absolute;
     bottom: 10%;
     left: 50%;
 }
 
-.scrolldown2 span{
+.scrolldown2 span {
     /* 描画位置 */
     position: absolute;
     left: 10px;
@@ -275,41 +284,57 @@ header>div{
     letter-spacing: 0.05em;
     /*縦書き設定*/
     -ms-writing-mode: tb-rl;
-    -webkit-writing-mode:vertical-rl;
-    writing-mode:vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
 }
 
-.scrolldown2:before{
-    content:"";
+.scrolldown2:before {
+    content: "";
     /*描画位置*/
     position: absolute;
     bottom: 0;
-    left:-4px;
+    left: -4px;
     /*丸の形状*/
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #eee;
     animation: circlemove 2.3s ease-in-out infinite,
-               circlemovehide 2.3s ease-out infinite;
+        circlemovehide 2.3s ease-out infinite;
 }
 
 /* 下からの距離が変化して丸の全体が上から下に動く */
-@keyframes circlemove{
-    0%{bottom: 60px;}
-    100%{bottom: -5px;}
+@keyframes circlemove {
+    0% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: -5px;
+    }
 }
 
 /* 上から下にかけて丸が透過 → 不透明 → 透過する */
-@keyframes circlemovehide{
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    80%{opacity: 0.9;}
-    100%{opacity: 0;}
+@keyframes circlemovehide {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.scrolldown2:after{
-    content:"";
+.scrolldown2:after {
+    content: "";
     /*描画位置*/
     position: absolute;
     bottom: 0;
@@ -321,14 +346,14 @@ header>div{
 }
 
 
-#top-bottom{
+#top-bottom {
     width: 100%;
     height: 7.5%;
     padding: 0 5%;
     border-top: 3px dashed white;
 }
 
-#top-bottom>p{
+#top-bottom>p {
     width: 100%;
     height: 100%;
     border-left: 3px dashed white;
@@ -338,12 +363,12 @@ header>div{
 /* ===============
  Section Common
  ===============*/
-.section{
+.section {
     /*border-top: 2px dashed gray;*/
     padding: 0 15%;
 }
 
-.section>h2{
+.section>h2 {
     font-size: 3rem;
     text-decoration: underline;
     margin-top: 30px;
@@ -353,7 +378,7 @@ header>div{
 /* ===============
  Profile 
  ===============*/
-#profile{
+#profile {
     width: 100vw;
     height: 90vh;
     min-height: 500px;
@@ -364,7 +389,7 @@ header>div{
 
 }
 
-#profile-box{
+#profile-box {
     width: 100%;
     height: 70%;
     display: flex;
@@ -377,40 +402,40 @@ header>div{
     border-radius: 20px;
 }
 
-#profile-image{
+#profile-image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
 }
 
-#profile-image>img{
+#profile-image>img {
     max-width: 200px;
     max-height: 200px;
 }
 
-#profile-description{
+#profile-description {
     width: 60%;
     font-size: 1.2rem;
 }
 
-#profile-name{
+#profile-name {
     font-size: 1.5rem;
     text-decoration: underline;
     margin-bottom: 3px;
 }
 
-#profile-hn{
-    font-size:1.2rem;
+#profile-hn {
+    font-size: 1.2rem;
     text-decoration: underline;
     margin-bottom: 10px
 }
 
-#profile-description>p>span{
+#profile-description>p>span {
     font-size: 1rem;
 }
 
-#profile-description p span a{
+#profile-description p span a {
     color: #0000EE;
     text-decoration: underline;
 }
@@ -419,16 +444,16 @@ header>div{
 /* ===============
  Skills
  =============== */
-#skills{
+#skills {
     width: 100vw;
-    height: 130vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-#skills-contents{
+#skills-contents {
     width: 100%;
     height: 80%;
     margin-bottom: 10%;
@@ -441,18 +466,18 @@ header>div{
     background-color: #fff;
 }
 
-#skills-contents hr{
+#skills-contents hr {
     width: 500px;
 }
 
-#skills-contents p{
+#skills-contents p {
     font-size: 1.8rem;
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
-#skills-contents p:first-child{
+#skills-contents p:first-child {
     font-size: 2.5rem;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -460,7 +485,7 @@ header>div{
 }
 
 /* strengths */
-#strengths-skills-items{
+#strengths-skills-items {
     width: 80%;
     margin-bottom: 40px;
     display: flex;
@@ -470,24 +495,24 @@ header>div{
     gap: 0 50px;
 }
 
-.strengths-skills-image{
+.strengths-skills-image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 130px;
 }
 
-.strengths-skills-image>img{
+.strengths-skills-image>img {
     width: 80px;
 }
 
-#nlp-icon{
+#nlp-icon {
     width: 130px;
 }
 
 /* normal */
 
-.skills-item{
+.skills-item {
     width: 80%;
     margin-bottom: 20px;
     display: flex;
@@ -498,7 +523,7 @@ header>div{
     gap: 20px 0;
 }
 
-.skills-image{
+.skills-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,29 +532,29 @@ header>div{
     height: 5%;
 }
 
-.skills-image>img{
+.skills-image>img {
     width: 50px;
 }
 
-#apache-icon{
+#apache-icon {
     width: 30px;
 }
 
 /* License */
-#license-items ul{
+#license-items ul {
     font-size: 1.2rem;
     list-style-type: none;
     text-align: center;
 }
 
-#license-items ul li{
+#license-items ul li {
     margin-bottom: 3px;
 }
 
 /* ===============
  Works 
 ===============*/
-#works{
+#works {
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -539,7 +564,7 @@ header>div{
 スライダーのためのcss
 ===================================*/
 /* メイン画像下に余白をつける */
-.gallery{
+.gallery {
     width: 60%;
     margin: 0 auto 20px auto;
     font-size: 1.2rem;
@@ -547,21 +572,21 @@ header>div{
     line-height: 2;
 }
 
-.gallery li{
+.gallery li {
     list-style: none;
 }
 
-.gallery a{
+.gallery a {
     display: inline-block;
 }
 
-.gallery li span{
+.gallery li span {
     font-size: 1rem;
     text-decoration: underline;
 }
 
 /* 画像の横幅を100%にしてレスポンシブ化 */
-ul img{
+ul img {
     width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -570,8 +595,8 @@ ul img{
     transition: 1s all;
 }
 
-ul img:hover{
-    transform: scale(1.05,1.05);
+ul img:hover {
+    transform: scale(1.05, 1.05);
     transition: 1s all;
     border: none;
 }
@@ -580,7 +605,7 @@ ul img:hover{
 
 /* 戻る、次へ矢印の位置 */
 .slick-prev,
-.slick-next{
+.slick-next {
     position: absolute;
     z-index: 3;
     top: 50%;
@@ -592,85 +617,85 @@ ul img:hover{
     width: 35px;
 }
 
-.slick-prev{
+.slick-prev {
     left: -6%;
     transform: rotate(-135deg);
 }
 
-.slick-next{
+.slick-next {
     right: -6%;
     transform: rotate(45deg);
 }
 
 /* 選択するサムネイル画像の設定*/
 
-.choice-btn li{
+.choice-btn li {
     cursor: pointer;
     outline: none;
     background: #333;
-    width: 12.5%!important;
+    width: 12.5% !important;
     list-style: none;
 }
 
-.choice-btn li img{
+.choice-btn li img {
     opacity: 0.2;
 }
 
-.choice-btn li.slick-current img{
+.choice-btn li.slick-current img {
     opacity: 1;
 }
 
-.choice-btn .slick-track{
-    transform: unset!important;
+.choice-btn .slick-track {
+    transform: unset !important;
 }
 
 /* ----- モーダルウィンドウの設定 ----- */
 /*hideエリアをはじめは非表示*/
-.hide-area{
+.hide-area {
     display: none;
 }
 
 /*モーダルのボタンの色を変更したい場合*/
 .modaal-close:after,
-.modaal-close:before{
+.modaal-close:before {
     background: #ccc;
 }
 
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
-.modaal-close:hover:before{
-    background:#666;
+.modaal-close:hover:before {
+    background: #666;
 }
 
 /* モーダルウィンドウ・ウィンドウ設定*/
-.modaal-content-container{
+.modaal-content-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.modaal-content-container h2{
+.modaal-content-container h2 {
     text-decoration: underline;
     margin: 5px;
 }
 
-.modaal-content-container img{
+.modaal-content-container img {
     width: 90%;
-    border:outset 5px #c0c0c0;
+    border: outset 5px #c0c0c0;
 }
 
-.modaal-content-container p{
-    margin-top:8px;
+.modaal-content-container p {
+    margin-top: 8px;
 }
 
-.modaal-content-container p span{
+.modaal-content-container p span {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.modaal-content-container p a{
+.modaal-content-container p a {
     color: #0000EE;
     text-decoration: underline;
 }
@@ -681,7 +706,7 @@ ul img:hover{
 /* ===============
  Contact 
  ===============*/
-#contact{
+#contact {
     width: 100vw;
     min-height: 50vh;
     display: flex;
@@ -691,17 +716,17 @@ ul img:hover{
     background-color: #fff;
 }
 
-#contact>p{
+#contact>p {
     font-size: 1.2rem;
 }
 
-#profile-icon{
+#profile-icon {
     width: 120px;
     height: 120px;
     margin: 10px;
 }
 
-#twitter-icon{
+#twitter-icon {
     width: 30px;
     height: 30px;
 }
@@ -709,7 +734,7 @@ ul img:hover{
 /* ===============
  footer 
 ===============*/
-footer{
+footer {
     height: 8vh;
     display: flex;
     justify-content: center;
