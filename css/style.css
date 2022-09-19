@@ -4,6 +4,7 @@
  Common 
 ================*/
 html {
+    font-size: 16px;
     font-family: 'Marcellus', serif;
     background-color: #f0f0f0;
 }
@@ -446,7 +447,7 @@ header>div {
  =============== */
 #skills {
     width: 100vw;
-    height: 160vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

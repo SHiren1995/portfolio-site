@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 @media(max-width:770px){
+    html {
+        -webkit-overflow-scrolling: touch;
+    }
     /* Loading */
     #splash-log{
         font-size: 1.5rem;
