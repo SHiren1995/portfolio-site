@@ -2,6 +2,7 @@
 
 @media(max-width:770px){
     html {
+        font-size: 12px;
         -webkit-overflow-scrolling: touch;
     }
     /* Loading */
