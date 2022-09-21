@@ -448,6 +448,7 @@ header>div {
 #skills {
     width: 100vw;
     height: 130vh;
+    min-height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

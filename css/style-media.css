@@ -126,6 +126,7 @@
     /* Skills */
     #skills{
         height: 800px;
+        min-height: auto;
     }
 
     #skills-contents>hr{
