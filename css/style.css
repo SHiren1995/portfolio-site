@@ -448,7 +448,7 @@ header>div {
 #skills {
     width: 100vw;
     height: 130vh;
-    min-height: 1000px;
+    min-height: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -457,7 +457,7 @@ header>div {
 
 #skills-contents {
     width: 100%;
-    height: 80%;
+    height: 90%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
@@ -544,7 +544,7 @@ header>div {
 
 /* License */
 #license-items ul {
-    font-size: 1.2rem;
+    font-size: 1rem;
     list-style-type: none;
     text-align: center;
 }
