@@ -2,17 +2,13 @@
 
 @media(max-width:1180px){
     html{
-        font-size: 12px;
+        font-size: 100%;
     }
 }
 
 @media(max-width:770px){
     html {
         -webkit-overflow-scrolling: touch;
-    }
-    /* Loading */
-    #splash-log{
-        font-size: 1.5rem;
     }
 
     /* Top */
@@ -21,7 +17,7 @@
     }
 
     #top{
-        height: 700px;
+        background-image: url(../img/common/top-background-img2-phone5.jpeg);
     }
 
     .top-wrapper{
@@ -176,13 +172,6 @@
     /* Works */
     #works{
         height: 500px;
-    }
-
-    #works-items{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 20px 0;
     }
 
     .gallery{

@@ -12,7 +12,7 @@ $('.gallery').slick({
 //選択画像の設定
 $('.choice-btn').slick({
 	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-	slidesToShow: 8, //表示させるスライドの数
+	slidesToShow: 10, //表示させるスライドの数
 	focusOnSelect: true, //フォーカスの有効化
 	asNavFor: '.gallery', //連動させるスライドショーのクラス名
 });

@@ -4,7 +4,7 @@
  Common 
 ================*/
 html {
-    font-size: 16px;
+    font-size: 100%;
     font-family: 'Marcellus', serif;
     background-color: #f0f0f0;
 }
@@ -14,171 +14,23 @@ a {
     text-decoration: none;
 }
 
-/* ================
- Loading 
-===============*/
-/* ローディング画面のためのCSS */
-#splash {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #c0c0c0;
-    z-index: 9999999;
-    text-align: center;
-    color: #000;
-}
-
-#splash-log {
-    font-size: 2rem;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: splash-log-animation;
-    animation-duration: 1.7s;
-    animation-timing-function: ease;
-    animation-iteration-count: 2;
-    opacity: 0;
-}
-
-@keyframes splash-log-animation {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-/* 画面遷移のためのCSS */
-body {
-    background: #c0c0c0;
-}
-
-body.appear {
-    background-color: #f0f0f0;
-}
-
-/* 画面遷移アニメーション */
-.splashbg1,
-.splashbg2 {
-    display: none;
-}
-
-body.appear .splashbg1,
-body.appear .splashbg2 {
-    display: block;
-}
-
-/* 右に消えるエリア */
-body.appear .splashbg1 {
-    animation-name: PageAnime;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    content: "";
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 50%;
-    transform: scaleX(1);
-    background-color: #333;
-}
-
-@keyframes PageAnime {
-    0% {
-        transform-origin: left;
-        transform: scaleX(1);
-    }
-
-    50% {
-        transform-origin: right;
-    }
-
-    100% {
-        transform-origin: right;
-        transform: scaleX(0);
-    }
-}
-
-/* 左に消えるエリア */
-body.appear .splashbg2 {
-    animation-name: PageAnime2;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    content: "";
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 50%;
-    transform: scaleX(1);
-    background-color: #333;
-}
-
-@keyframes PageAnime2 {
-    0% {
-        transform-origin: right;
-        transform: scaleX(1);
-    }
-
-    50% {
-        transform-origin: left;
-    }
-
-    100% {
-        transform-origin: left;
-        transform: scaleX(0);
-    }
-}
-
-/* 画面遷移の後現れるコンテンツ設定 */
 #container {
-    opacity: 0;
-    background-image: url(../img/common/background-image2.jpg);
+    background-image: url(../img/common/background-image3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-body.appear #container {
-    animation-name: PageAnimeAppear;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes PageAnimeAppear {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 /* ===============
  Top
 ===============*/
 #top {
     width: 100vw;
     height: 100vh;
-    background-position: center;
-    background-color: #446294;
+    background-image: url(../img/common/top-background-img2.png);
+    background-position: bottom left;
+    background-color: #fff;
     background-size: cover;
-    color: white;
+    color: rgb(83, 83, 83);
 }
 
 header {
@@ -189,7 +41,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    border-bottom: 3px dashed white;
+    border-bottom: 3px dashed rgb(83, 83, 83);
 }
 
 header>div {
@@ -199,16 +51,18 @@ header>div {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /*
     border-left: 3px dashed white;
     border-right: 3px dashed white;
+    */
 }
 
 .top-wrapper {
     margin: 0 5%;
     width: 90%;
     height: 85%;
-    border-left: 3px dashed white;
-    border-right: 3px dashed white;
+    /*border-left: 3px dashed white;
+    border-right: 3px dashed white;*/
 }
 
 #top-title {
@@ -222,12 +76,13 @@ header>div {
 #top-title p {
     display: inline-block;
     font-weight: normal;
-    font-size: 3.7rem;
+    font-size: 4.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #top-menu {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 40%;
     justify-content: space-around;
@@ -239,126 +94,25 @@ header>div {
     text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: #bbb;
+    color: #777;
 }
 
 #top-menu>a:hover {
-    color: white;
+    color: rgb(83, 83, 83);
 }
-
-/*
-#top-scroll-guide{
-    height: 20%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.arrow-bottom{
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0 10px;
-    border-bottom: 4px solid white;
-    border-right: 4px solid white;
-    transform: rotate(45deg);
-}
-*/
-
-.scrolldown2 {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-}
-
-.scrolldown2 span {
-    /* 描画位置 */
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    /*テキストの形状*/
-    color: #eee;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
-    /*縦書き設定*/
-    -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
-
-.scrolldown2:before {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom: 0;
-    left: -4px;
-    /*丸の形状*/
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #eee;
-    animation: circlemove 2.3s ease-in-out infinite,
-        circlemovehide 2.3s ease-out infinite;
-}
-
-/* 下からの距離が変化して丸の全体が上から下に動く */
-@keyframes circlemove {
-    0% {
-        bottom: 60px;
-    }
-
-    100% {
-        bottom: -5px;
-    }
-}
-
-/* 上から下にかけて丸が透過 → 不透明 → 透過する */
-@keyframes circlemovehide {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 0.9;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.scrolldown2:after {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /*線の形状*/
-    width: 2px;
-    height: 70px;
-    background: #eee;
-}
-
 
 #top-bottom {
     width: 100%;
     height: 7.5%;
     padding: 0 5%;
-    border-top: 3px dashed white;
+    /*border-top: 3px dashed white;*/
 }
 
 #top-bottom>p {
     width: 100%;
     height: 100%;
-    border-left: 3px dashed white;
-    border-right: 3px dashed white;
+    /*border-left: 3px dashed white;
+    border-right: 3px dashed white;*/
 }
 
 /* ===============
@@ -381,7 +135,7 @@ header>div {
  ===============*/
 #profile {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -417,19 +171,13 @@ header>div {
 
 #profile-description {
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #profile-name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: underline;
     margin-bottom: 3px;
-}
-
-#profile-hn {
-    font-size: 1.2rem;
-    text-decoration: underline;
-    margin-bottom: 10px
 }
 
 #profile-description>p>span {
@@ -447,7 +195,7 @@ header>div {
  =============== */
 #skills {
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
     min-height: 1100px;
     display: flex;
     flex-direction: column;
@@ -457,11 +205,11 @@ header>div {
 
 #skills-contents {
     width: 100%;
-    height: 90%;
-    margin-bottom: 10%;
+    height: 70%;
     display: flex;
+    padding-bottom: 5%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     border: 1px dashed black;
     border-radius: 20px;
@@ -473,43 +221,10 @@ header>div {
 }
 
 #skills-contents p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: underline;
-}
-
-#skills-contents p:first-child {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    text-decoration: underline;
-}
-
-/* strengths */
-#strengths-skills-items {
-    width: 80%;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0 50px;
-}
-
-.strengths-skills-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-}
-
-.strengths-skills-image>img {
-    width: 80px;
-}
-
-#nlp-icon {
-    width: 130px;
 }
 
 /* normal */
@@ -558,7 +273,7 @@ header>div {
 ===============*/
 #works {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
 }
 
@@ -635,7 +350,7 @@ ul img:hover {
     cursor: pointer;
     outline: none;
     background: #333;
-    width: 12.5% !important;
+    width: 20% !important;
     list-style: none;
 }
 
@@ -700,37 +415,6 @@ ul img:hover {
 .modaal-content-container p a {
     color: #0000EE;
     text-decoration: underline;
-}
-
-
-
-
-/* ===============
- Contact 
- ===============*/
-#contact {
-    width: 100vw;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #fff;
-}
-
-#contact>p {
-    font-size: 1.2rem;
-}
-
-#profile-icon {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-}
-
-#twitter-icon {
-    width: 30px;
-    height: 30px;
 }
 
 /* ===============

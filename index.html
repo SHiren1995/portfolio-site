@@ -34,12 +34,6 @@
 </head>
 
 <body>
-    <!-- Loading -->
-    <div id="splash">
-        <div id="splash-log">Now Loading...</div>
-    </div>
-    <div class="splashbg1"></div>
-    <div class="splashbg2"></div>
 
     <!-- Main Contents -->
     <div id="container">
@@ -61,9 +55,9 @@
                     <a href="#profile">Profile</a>
                     <a href="#skills"> Skills</a>
                     <a href="#works">Works</a>
-                    <a href="#contact">Contact</a>
+                    <!-- <a href="#contact">Contact</a> -->
+                    
                 </div>
-                <div class="scrolldown2"><span>Scroll</span></div>
             </div>
             <div id="top-bottom">
                 <p></p>
@@ -74,11 +68,11 @@
             <h2>Profile</h2>
             <div id="profile-box">
                 <div id="profile-image">
-                    <img src="./img/common/my-profile-icon.png" alt="プロフィールアイコン">
+                    <img src="./img/common/my-profile-icon2.png" alt="プロフィールアイコン">
                 </div>
                 <div id="profile-description">
                     <p id="profile-name">NAME：Shoma.Hasegawa</p>
-                    <p>岐阜県出身。2000年10月生まれ。<br />中学生時にPCに興味を持ち、自作PCの作成や、マイコンボードであるラズベリーパイに触れるようになる。<br />上記の経緯から次第にプログラミングにも意識が向くようになり、より専門的な勉強をしようと高専の情報工学科に入学。高専生時代は自然言語処理の研究を主として、勉学に励む。<br />卒業後はクラウドインテグレーターの企業に入社し、主にノーコード・ローコードによる業務アプリケーションの開発に従事。<br />
+                    <p>岐阜県出身。2000年10月生まれ。<br />中学生時にPCに興味を持ち、自作PCの作成やマイコンボードであるラズベリーパイに触れるようになる。<br />上記の経緯から次第にプログラミングにも意識が向くようになり、より専門的な勉強をしようと高専の情報工学科に入学。高専生時代は自然言語処理の研究を主として、勉学に励む。<br />卒業後はクラウドインテグレーターの企業に入社し、主にノーコード・ローコードによる業務アプリケーションの開発に従事。<br />その後、上記企業を退社。退社後は若いうちに色々なところに行き様々な経験をしたいと考え、株式会社ダイブの派遣スタッフに登録。日本の各地を巡りながらリゾートバイトという形態で農業・テーマパークスタッフ・カメラマンなど多くの業種を経験し今に至る。</br>
                     </p>
                 </div>
             </div>
@@ -87,20 +81,6 @@
         <div id="skills" class="section">
             <h2>Skills</h2>
             <div id="skills-contents">
-                <p>Strengths Skills</p>
-                <div id="strengths-skills-items">
-                    <div class="strengths-skills-image">
-                        <img src="./img/skills/python.svg" alt="python">
-                    </div>
-                    <div class="strengths-skills-image">
-                        <img src="./img/skills/flask.svg" alt="flask">
-                    </div>
-                    <div class="strengths-skills-image">
-                        <img id="nlp-icon" src="./img/skills/NLP.svg" alt="nlp">
-                    </div>
-                </div>
-
-                <hr size="30">
 
                 <p>Language</p>
                 <div class="skills-item">
@@ -149,8 +129,8 @@
                     <div class="skills-image">
                         <img src="./img/skills/PowerAutomate_scalable.svg" alt="powerautomate">
                     </div>
-                    <div class="skills-image">
-                        <img src="./img/skills/Dataverse_scalable.svg" alt="dataverse">
+                    <div class="skills-image" id="nlp-img">
+                        <img src="./img/skills/nlp2.png" alt="dataverse">
                     </div>
                 </div>
                 <p>License</p>
@@ -158,6 +138,7 @@
                     <ul>
                         <li>基本情報技術者試験</li>
                         <li>ウェブデザイン技能検定 2級</li>
+                        <li>第三級アマチュア無線技士資格</li>
                         <li>Microsoft Certified: Power Platform Fundamentals</li>
                         <li>Microsoft Certified: Azure Data Fundamentals</li>
                     </ul>
@@ -232,6 +213,22 @@
                     <span>製作物名</span><br>
                     - 高専・卒業論文 -
                 </li>
+
+                <li>
+                    <a href="#info-9" class="info">
+                        <img src="./img/work/soturon.PNG" alt="">
+                    </a>
+                    <span>製作物名</span><br>
+                    - 高専・卒業論文 -
+                </li>
+
+                <li>
+                    <a href="#info-10" class="info">
+                        <img src="./img/work/soturon.PNG" alt="">
+                    </a>
+                    <span>製作物名</span><br>
+                    - 高専・卒業論文 -
+                </li>
             </ul>
 
             <ul class="choice-btn">
@@ -242,6 +239,8 @@
                 <li><img src="./img/work/around_view_wheelchair.png" alt=""></li>
                 <li><img src="./img/work/danger_zone_infiltration_robot.png" alt=""></li>
                 <li><img src="./img/work/youtube_tool_top.PNG" alt=""></li>
+                <li><img src="./img/work/soturon.PNG" alt=""></li>
+                <li><img src="./img/work/soturon.PNG" alt=""></li>
                 <li><img src="./img/work/soturon.PNG" alt=""></li>
             </ul>
 
@@ -305,21 +304,34 @@
                         href="https://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/hasegawa.pdf">リンク</a></p>
             </section>
 
-        </div>
+            <section id="info-9" class="hide-area">
+                <h2>製作物名：高専・卒業論文</h2>
+                <img src="./img/work/soturon.PNG" alt="">
+                <p><span>製作物・内容</span><br>学生時の卒業論文となります。<br>研究テーマは「Word2vecを利用したクラスター分析による文書の分類」という、機械学習を利用した自然言語処理に関する内容になります。<br><a
+                        href="https://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/hasegawa.pdf">リンク</a></p>
+            </section>
 
+            <section id="info-10" class="hide-area">
+                <h2>製作物名：高専・卒業論文</h2>
+                <img src="./img/work/soturon.PNG" alt="">
+                <p><span>製作物・内容</span><br>学生時の卒業論文となります。<br>研究テーマは「Word2vecを利用したクラスター分析による文書の分類」という、機械学習を利用した自然言語処理に関する内容になります。<br><a
+                        href="https://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/hasegawa.pdf">リンク</a></p>
+            </section>
+
+        </div>
+        <!--
         <div id="contact" class="section">
             <h2>Contact</h2>
             <p>ご用がありましたら、TwitterのDMまでご連絡をお願いいたします。</p>
             <a href="#"><img id="profile-icon" src="./img/common/my-profile-icon.png" alt="プロフィールアイコン" /></a>
             <a href="#"><img id="twitter-icon" src="./img/common/twitter-icon.svg" alt="Twitterアイコン"></a>
         </div>
-
+        -->
         <footer>
-            <p>&copy; 2022 SHiren</p>
+            <p>&copy; 2024 Shoma.Hasegawa</p>
         </footer>
     </div>
 
-    <script src="./js/loading.js"></script>
     <script src="./js/top-link-scroll.js"></script>
     <script src="./js/works-gallery.js"></script>
     <script src="./js/works-modaal.js"></script>
