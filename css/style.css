@@ -171,7 +171,7 @@ header>div {
 
 #profile-description {
     width: 60%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #profile-name {
@@ -259,7 +259,7 @@ header>div {
 
 /* License */
 #license-items ul {
-    font-size: 1rem;
+    font-size: 1.3rem;
     list-style-type: none;
     text-align: center;
 }
@@ -273,7 +273,7 @@ header>div {
 ===============*/
 #works {
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -350,7 +350,7 @@ ul img:hover {
     cursor: pointer;
     outline: none;
     background: #333;
-    width: 20% !important;
+    width: 10% !important;
     list-style: none;
 }
 
