@@ -133,10 +133,6 @@
         font-size: 1rem;
     }
 
-    #skills-contents>p:first-child{
-        font-size: 1.5rem;
-    }
-
     /* strengths*/
     #strengths-skills-item{
         gap: 0;
